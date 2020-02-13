@@ -1,0 +1,34 @@
+Nume, prenume:
+Grupa, seria:
+
+Data inceperii temei: 05-04-2017
+Data finalizarii temei: 08-04-2017
+
+Probleme intampinate:
+	- separarea implementarii claselor cu template de definitii a dus la
+	probleme de compilare ce au fost rezolvate prin declarari explicite
+	ale clasei cu diferite template-uri in fisierele de implementare
+	- cod duplicat -> a fost rezolvat prin modularizare, prin separarea
+	in cat mai multe clase care fac lucruri simple, dar le fac bine
+
+Algoritmul utilizat:
+	- am folosit HashTable-uri generice pentru gasirea sau modificarea
+	unei valori
+	de la o anumita adresa in complexitate O(1)
+	- cheia este adresa, iar functia de hash foloseste anumiti biti din
+	adresa pentru a calcula indexul dintr-un vector
+	- fiecare element din vector este un set, adica o pereche de 2 blocuri
+	de memorie
+	- pentru a determina care este ultimul bloc adaugat in set, folosesc
+	un bool in clasa acestuia pe care il setez cu true atunci cand este
+	adaugat in set si cu false pe blocul deja existent in set
+	- pentru functiile Read sau Write am folosit logica descrisa in enuntul
+	temei
+
+Complexitatea temei:
+	- tema a fost de dificultate medie
+	- dificultatea nu a constat in implementarea unui Hash Table generic ci
+	mai mult in aplicarea logicii de citire scriere in cache-uri si
+	sincronizare
+	- de asemenea, design-ul claselor a durat mai mult decat implementarea
+	propriu-zisa
