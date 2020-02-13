@@ -1,8 +1,6 @@
-Nume, prenume:
-Grupa, seria:
+Nume, prenume: Coman Diana
+Grupa, seria: 313CA
 
-Data inceperii temei: 05-04-2017
-Data finalizarii temei: 08-04-2017
 
 Probleme intampinate:
 	- separarea implementarii claselor cu template de definitii a dus la
